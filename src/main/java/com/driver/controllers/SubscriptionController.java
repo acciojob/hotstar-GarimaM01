@@ -42,7 +42,7 @@ public class SubscriptionController {
     }
 
     @GetMapping("/calculateTotalRevenue")
-    public Integer getTotalRevenue(){
+    public Integer getTotalRevenue() throws Exception {
 
         //Calculate the total Revenue of hot-star from all the Users combined...
         return subscriptionService.calculateTotalRevenueOfHotstar();
